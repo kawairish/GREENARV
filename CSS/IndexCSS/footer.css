@@ -1,0 +1,9 @@
+.footer1{
+    background-color: var(--secondary);
+}
+.footer2 img{
+    width: 20% !important;
+}
+.footer2 .icon-links img{
+    width: 5% !important;
+}

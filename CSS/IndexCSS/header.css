@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+    .mySlides {display: none;}
+    /* img {vertical-align: middle;} */
+}
+:root{
+    --primary: #007400;
+    --secondary:#FFBA3F ;
+    --text:#4E4E4E;
+    --bg: #FFDD90; 
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--text); 
+} 
+li{
+    list-style: none;
+}
+
+
+
+
+.navbar-brand img{
+    width: 5rem;
+    height: 4rem;
+    flex-shrink: 0;
+}
+#first-link{
+    color: var(--secondary) ;
+}
+
+.navbar-nav li a{
+    color: #FFF;
+}
+.btn{
+    border-radius: 0;
+    border: 1px solid transparent;
+    transition:.3s ease all;
+    padding: 0.75rem 2.4rem;
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+.btn-1{
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #007400;
+}
+.btn-1:hover{
+    background-color: var(--primary);
+    color: #ECEDEE;
+    border: none;
+}
+.btn-2{
+    background-color: var(--primary);
+    color: #ECEDEE;
+}
+.btn-2:hover{
+    color: var(--primary);
+    background-color: transparent;
+    border: 2px solid #007400;
+}
+
+
+/* .dropdown2 {
+    display: none;
+	gap: 1rem;
+    position: absolute;
+    top: 90%;
+    right: 15%;
+}
+
+.dropdown2-button {
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px !important;
+    cursor: pointer;
+} */
+header{
+    height: 100vh !important;
+    /* width: 100% !important; */
+    margin-bottom: 3.5rem !important;
+}
+
+
+/* hero section */
+/* styles.css */
+.hero-container {
+    width: 100%;
+    position: relative;
+    /* max-width: 800px; */
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1900px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100vh !important;
+}
+
+.dot {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #6B6B6B;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
+
+
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 4.5s; /* Extend the duration for slower transition */
+    animation-timing-function: ease; /* Use ease for a smoother transition */
+    animation-iteration-count: infinite; /* Optionally, make it loop infinitely */
+}
+
+@keyframes fade {
+    0% { opacity: .7; } /* Start fully visible */
+    50% { opacity: 1; } /* First image fully visible */
+    100% { opacity: .7; } /* Second image (looping) */
+}
+
+.hero-text {
+    width: 90%;
+    margin-inline: auto !important;
+    color: #FFF;
+    position: absolute;
+    bottom: 15%;
+    
+}
+
+.hero-btn{
+    background-color: var(--primary);
+    border-radius: 8px;
+    color: #fff;
+}
+

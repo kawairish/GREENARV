@@ -1,0 +1,16 @@
+
+.sec5 .card-wrapper{
+    width: 70%;
+    height: 100%;
+}
+.sec5 .card-top, .card-bottom{
+    border: 3px solid var(--secondary);
+    height: 70% !important;
+    width: 90%;
+}
+.card1{
+    margin-top: 15rem !important;
+}
+.card3{
+    margin-top: 10rem !important;
+}

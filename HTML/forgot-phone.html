@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="shortcut icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="/CSS/farmer-login-phone.css"
+		/>
+		<title>Login Page</title>
+	</head>
+	<body>
+		<section class="signup-section w-100">
+			<div class="signup-container d-flex gap-5">
+				<div class="signup-image-wrapper position-relative">
+					<img
+						src="/Images/forgot-password.png"
+						alt=""
+						class="w-100"
+					/>
+                    <div class="logo-wrapper position-absolute top-0">
+                        <img src="/Images/logo.png" alt="">
+                    </div>
+				</div>
+				<div class="signup-content mt-5 pt-5">
+					<h1 class="display-4 mb-4 fs-1 fw-semibold mt-5">
+						Forgot Password
+					</h1>
+					<p class="mb-4 top-p">
+						We'll send you an OTP on your phone number with instructions on how to reset your password.
+					</p>
+					<a
+						href="./forgot-email.html"
+						class="fs-5 me-5 "
+						>send through email</a
+					>
+					<a
+						href="./forgot-phone.html"
+						class="fs-5 ms-5 link1"
+						>Send through phone number</a
+					>
+					<hr class="mb-5" />
+					<!-- Form -->
+					<form
+						action="SignUp.html@"
+						method="get"
+						class="w-100"
+						id="createAccountForm"
+					>
+                    <div class="form-div mb-5 position-relative mt-4">
+                        <p class="fw-medium mb-2">Phone Number*</p>
+                        <img
+                            src="/Images/phone.jpeg"
+                            alt=""
+                            class="position-absolute top-50 start-0 phone-img"
+                        />
+                        <input
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            placeholder="+234 892 742 999"
+                            class="border rounded w-100 py-2 ps-5 input-field"
+                            required
+                        />
+                    </div>
+						<button
+							type="submit"
+							id="accountButton"
+							class="btn signup-btn w-100 text-white py-2 fs-5"
+							type="submit" onclick="window.location.href='./reset-password.html'"
+						>
+							Send Code
+						</button>
+					</form>
+					<p class="text-center my-5">
+						<a
+							href="./farmer-login-phone.html"
+							class="input-a ms-1 fw-medium"
+							>Back to log in</a
+						>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+		<script src=""></script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+
+.sec1 , .sec2 , .sec3, .sec4, .sec5, .sec6 , .footer1, .footer2{
+    width: 100%;
+}
+.sec1-wrapper, .sec2 .card-group, .sec3-wrapper, .sec4 .card-group , .sec5-wrapper, .sec6-wrapper, .footer1-wrapper , .footer2-wrapper{
+    width: 90%;
+    margin-inline: auto !important;
+}
+.sec1-text button, .sec3-text button{
+    color: var(--primary);
+    background-color: transparent;
+    border: 2px solid #007400;
+}
+.sec1-text button:hover , .sec3-text button:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+.sec1-text p, .sec2 p, .sec3-text p, .sec4 p, .sec5 p{
+    font-family: Lora;
+}
+.sec2 .card-img-top , .sec4 .card-img-top{
+    width: 15%;
+}
+.sec2 .card, .sec4 .card{
+    background-color: var(--bg);
+    border: none;
+}
