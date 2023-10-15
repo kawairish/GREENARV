@@ -28,4 +28,8 @@ This project is designed to connect constomers with farmers and also use AI tool
 
 Thank you for your interest in contributing to our project! At this moment, we are not accepting contributions. However, we appreciate your support and encourage you to check back later for updates.
 
+<<<<<<< HEAD
 ## License
+=======
+## License
+>>>>>>> 0656cb74ebf89f2f659ed210c96325d5e02c2383
