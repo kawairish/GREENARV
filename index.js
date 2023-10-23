@@ -8,19 +8,19 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
         navbar.style.backgroundColor = '#FFF';
         navbar.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.2)";
-        navLink1.style.color = 'black'
-        navLink2.style.color = 'black'
-        navLink3.style.color = 'black'
-        navLink4.style.color = 'black'
-        btn1.style.color = '#4E4E4E'
+        navLink1.style.color = '#4E4E4E'
+        navLink2.style.color = '#4E4E4E'
+        navLink3.style.color = '#4E4E4E'
+        navLink4.style.color = '#4E4E4E'
+        btn1.style.color = 'black'
     } else {
-        navbar.style.backgroundColor = 'transparent';
-        navbar.style.boxShadow = "none";
-        navLink1.style.color = '#ECEDEE'
-        navLink2.style.color = '#ECEDEE'
-        navLink3.style.color = '#ECEDEE'
-        navLink4.style.color = '#ECEDEE'
-        btn1.style.color = '#FFF'
+        navbar.style.backgroundColor = '#FFF';
+        navbar.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.2)";
+        navLink1.style.color = '#4E4E4E'
+        navLink2.style.color = '#4E4E4E'
+        navLink3.style.color = '#4E4E4E'
+        navLink4.style.color = '#4E4E4E'
+        btn1.style.color = 'black'
     }
 });
 

@@ -52,7 +52,7 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg fixed-top py-2 px-5 mx-auto">
+			<nav class="navbar navbar-expand-lg fixed-top py-2 px-5 mx-auto bg-white">
 				<div class="container-fluid gap-md-5">
 					<a
 						class="navbar-brand"
@@ -75,13 +75,13 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div
-						class="collapse navbar-collapse"
+						class="collapse navbar-collapse ms-md-5 ps-md-5"
 						id="navbarTogglerDemo02"
 					>
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ms-md-5 ps-md-5">
 							<li class="nav-item">
 								<a
-									class="nav-link active bg-transparent"
+									class="nav-link active bg-transparent fw-medium"
 									id="first-link"
 									aria-current="page"
 									href="#"
@@ -90,7 +90,7 @@
 							</li>
 							<li class="nav-item dropdown">
 								<a
-									class="nav-link dropdown-toggle"
+									class="nav-link dropdown-toggle fw-medium"
 									href="#"
 									role="button"
 									data-bs-toggle="dropdown"
@@ -99,62 +99,73 @@
 								>
 									Products
 								</a>
-								<ul class="dropdown-menu">
+								<ul class="dropdown-menu ps-4">
+									<h4 class="text-center products-title my-3">Products</h4>
 									<li>
 										<a
-											class="dropdown-item text-black"
+											class="dropdown-item text-black fs-5"
 											href="./html/content.html"
-											>AI Crop Advisor</a
+											>1. AI Crop Advisor</a
 										>
+										<p class="mx-5 mb-2">GreenArv offers improved technology to your crops and get up to date advice on everything about farming</p>
 									</li>
 									<li>
 										<a
-											class="dropdown-item text-black"
+											class="dropdown-item text-black fs-5"
 											href="./html/download.html"
-											>Offline Services</a
+											>2. Store</a
 										>
+										<p class="mx-5 mb-2">Create a free store and start selling your produce to customers</p>
+									</li>
+									<li>
+										<a
+											class="dropdown-item text-black fs-5"
+											href="./html/download.html"
+											>3. Retail</a
+										>
+										<p class="mx-5">Get the freshest produce directly from verified farmers</p>
 									</li>
 								</ul>
 							</li>
 							<li class="nav-item">
 								<a
-									class="nav-link"
+									class="nav-link fw-medium"
 									id="nav-link2"
-									href="#"
+									href="/HTML/faq.html"
 									>FAQs</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
-									class="nav-link"
+									class="nav-link fw-medium"
 									id="nav-link3"
-									href="./html/about.html"
+									href="/HTML/about.html"
 									>About Us</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
-									class="nav-link"
+									class="nav-link fw-medium"
 									id="nav-link4"
-									href="#"
+									href="/HTML/contact.html"
 									>Contact Us</a
 								>
 							</li>
 						</ul>
 						<div class="btn-div d-flex gap-4">
 							<button
-								class="btn btn-1 btn-outline-warning px-5 py-2"
+								class="btn btn-sm btn-1 btn-outline-warning px-3 fw-medium"
 								type="submit"
 								onclick="window.location.href='/HTML/login.html'"
 							>
 								Login
 							</button> 
 							<button
-								class="btn btn-2 btn-outline-light px-5 py-2 me-5"
+								class="btn btn-2 btn-outline-light px-3 py-2 me-5"
 								type="submit"
 								onclick="window.location.href='/HTML/signup.html'"
 							>
-								Get started
+								Create account
 							</button>
 						</div>
 					</div>
@@ -169,7 +180,7 @@
 							class="w-100"
 						/>
 						<div class="hero-text mx-auto">
-							<div class="top-text ms-5 ps-5 mb-5">
+							<div class="top-text mb-5">
 								<h1 class="display-3 fw-semibold">
 									Improve your crop <br />
 									with new technology.
@@ -180,28 +191,28 @@
 								</p>
 							</div>
 							<div class="hero-cards d-flex justify-content-end">
-								<div class="row gap-4 flex-md-nowrap">
+								<div class="row flex-md-nowrap">
 									<div class="col-sm-6 mb-3 mb-sm-0 text-center">
-										<div class="card w-100">
+										<div class="card w-75 d-flex flex-column align-items-center">
 											<div class="card-body py-3">
-												<h5 class="card-title">1000 +</h5>
+												<h5 class="card-title fw-normal">1000 +</h5>
 												<p class="card-text my-3">Farmers have joined</p>
 												<a
 													href="#"
-													class="btn hero-btn px-3 py-1"
+													class="btn hero-btn px-3 py-1 fs-6"
 													>Join as a farmer</a
 												>
 											</div>
 										</div>
 									</div>
 									<div class="col-sm-6 mb-3 mb-sm-0 text-center">
-										<div class="card w-100">
+										<div class="card w-75 d-flex flex-column align-items-center">
 											<div class="card-body py-3">
-												<h5 class="card-title">3000 +</h5>
+												<h5 class="card-title fw-normal">3000 +</h5>
 												<p class="card-text my-3">Customers have joined</p>
 												<a
 													href="#"
-													class="btn hero-btn px-2 py-1"
+													class="btn hero-btn px-2 py-1 fs-6"
 													>Join as a customer</a
 												>
 											</div>
@@ -218,38 +229,38 @@
 							class="w-100"
 						/>
 						<div class="hero-text mx-auto">
-							<div class="top-text ms-5 ps-5 mb-5">
+							<div class="top-text mb-5">
 								<h1 class="display-3 fw-semibold">
 									Not your regular <br />
-									farmers market
+									farmers market.
 								</h1>
 								<p class="fw-medium fs-4">
 									We connect you to accredited farmers to shop fresh produce
 								</p>
 							</div>
 							<div class="hero-cards d-flex justify-content-end">
-								<div class="row gap-4 flex-md-nowrap">
+								<div class="row flex-md-nowrap">
 									<div class="col-sm-6 mb-3 mb-sm-0 text-center">
-										<div class="card w-100">
+										<div class="card w-75 d-flex flex-column align-items-center">
 											<div class="card-body py-3">
-												<h5 class="card-title">1000 +</h5>
+												<h5 class="card-title fw-normal">1000 +</h5>
 												<p class="card-text my-3">Farmers have joined</p>
 												<a
 													href="#"
-													class="btn hero-btn px-3 py-1"
+													class="btn hero-btn px-3 py-1 fs-6"
 													>Join as a farmer</a
 												>
 											</div>
 										</div>
 									</div>
 									<div class="col-sm-6 mb-3 mb-sm-0 text-center">
-										<div class="card w-100">
+										<div class="card w-75 d-flex flex-column align-items-center">
 											<div class="card-body py-3">
-												<h5 class="card-title">3000 +</h5>
+												<h5 class="card-title fw-normal">3000 +</h5>
 												<p class="card-text my-3">Customers have joined</p>
 												<a
 													href="#"
-													class="btn hero-btn px-2 py-1"
+													class="btn hero-btn px-2 py-1 fs-6"
 													>Join as a customer</a
 												>
 											</div>
@@ -279,14 +290,14 @@
 						class="row row-cols-2 row-cols-md-2 gap-4 flex-md-nowrap justify-content-center align-items-center"
 					>
 						<div class="sec1-text">
-							<div class="sec1-text-cover w-75 mx-auto">
-								<h2 class="display-6 fw-medium">Scale your business</h2>
-								<p class="w-50 my-3">
+							<div class="sec1-text-cover mx-auto" style="width: 459px;">
+								<h2 class="fw-bold" style="font-size: 36px;">Scale your business</h2>
+								<p class=" my-3" style="font-size: 24px; width: 385px;">
 									Sell your produce directly to customers and use our improved
 									technology to improve your produce quality.
 								</p>
 								<button
-									class="btn text-black rounded px-4 py-1"
+									class="btn  rounded px-4 py-1 fs-6"
 									onclick="window.location.href=''"
 								>
 									Get started
@@ -314,9 +325,7 @@
 						<div class="card-body">
 							<h5 class="card-title my-3">Crop Advisor</h5>
 							<p class="card-text">
-								Improve your produce with our new technology to help optimize
-								crop production, reduce resource wastage, and improve overall
-								farm management.
+								With our new technology you can optimize crop production and improve overall farm management.
 							</p>
 						</div>
 					</div>
@@ -329,9 +338,7 @@
 						<div class="card-body">
 							<h5 class="card-title my-3">Online Store</h5>
 							<p class="card-text">
-								Automate your ordering process with our platform and start
-								selling your produce to customers.
-							</p>
+								Automate your ordering process with our platform and start selling your produce to customers.
 						</div>
 					</div>
 					<div class="card align-items-center text-center py-5 px-4">
@@ -343,8 +350,7 @@
 						<div class="card-body">
 							<h5 class="card-title my-3">Flexible Delivery</h5>
 							<p class="card-text">
-								Delivery options for order fulfillment by creating detailed
-								delivery, shipping and pickup locations
+								Delivery options for order fulfillment by creating detailed delivery, shipping and pickup locations.
 							</p>
 						</div>
 					</div>
@@ -363,13 +369,13 @@
                         />
                         </div>
 						<div class="sec1-text">
-							<div class="sec1-text-cover w-75 mx-auto">
-								<h2 class="display-6 fw-medium">Shop fresh produce</h2>
-								<p class="w-50 my-3">
+							<div class="sec1-text-cover mx-auto" style="width: 459px;">
+								<h2 class="fw-bold" style="font-size: 36px;">Shop fresh produce</h2>
+								<p class=" my-3" style="font-size: 24px; width: 385px;">
 									Receive newly harvested produce  from our accredited farmers with freshness guaranteed.
 								</p>
 								<button
-									class="btn text-black rounded px-4 py-1"
+									class="btn rounded px-4 py-1 fs-6"
 									onclick="window.location.href=''"
 								>
 									Get started
@@ -391,7 +397,7 @@
 						<div class="card-body ">
 							<h5 class="card-title my-3">Verified Farmers</h5>
 							<p class="card-text">
-								Receive fresh organic produce from verified farmers and enjoy locally sourced produce with confidence, knowing it's grown sustainably and responsibly.
+								Receive fresh organic produce from verified farmers and enjoy locally sourced produce.
 							</p>
 						</div>
 					</div>
@@ -424,64 +430,66 @@
 				</div>
             </section>
             <section class="sec5 my-5">
-                <div class="sec5-wrapper d-flex gap-5">
-                    <div class="sec5-title w-75">
-                        <h2>What people say about us</h2>
-                        <p>Thousands of satisfied farmers and customers </p>
+                <div class="sec5-wrapper">
+                    <div class="sec5-title">
+                        <h2 class="mb-3">What people say about us</h2>
+                        <p style="font-size: 18px; width: 385px;">Thousands of satisfied farmers and customers </p>
                     </div>
-                    <div class="card-wrapper d-flex flex-column gap-5 card1">
-                        <div class="card-top py-4 px-4">
-                            <p class="mb-5">I've seen a noticeable reduction in resource wastage and an increase in overall efficiency since I started using Greenarv. It's a powerful tool that empowers farmers with data-driven solutions.</p>
-                            <div class="card-profile d-flex gap-2">
-                                <img src="/Images/Janet.svg" alt="">
-                                <p class="fs-5">Janet Faroye <br><span class="fs-6">Farmer</span></p>
-                            </div>
-                        </div>
-                        <div class="card-bottom py-4 px-4">
-                            <p class="mb-5">Greenarv is a game-changer for my family's grocery shopping. The convenience of local delivery, combined with the variety of products and the focus on supporting our community, makes it a win-win</p>
-                            <div class="card-profile d-flex gap-1">
-                                <img src="/Images/Judith.svg" alt="">
-                                <p class="fs-5">Judith Okafor <br> <span class="fs-6">Customer</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper d-flex flex-column gap-5">
-                        <div class="card-top py-4 px-3">
-                            <p class="mb-5">It's a joy to support local farmers while enjoying seasonal fruits and vegetables. The customizable orders and easy-to-use interface make it a breeze to get farm-fresh goodness delivered right to my doorstep.</p>
-                            <div class="card-profile d-flex">
-                                <img src="/Images/Caroline.svg" alt="">
-                                <p class="fs-5">Caroline Nnaji<br><span class="fs-6">Customer</span></p>
-                            </div>
-                        </div>
-                        <div class="card-bottom py-4 px-4">
-                            <p class="mb-5">As a farmer, Greenarv has been a game-changer for my business. It connects me directly with local customers, allowing me to showcase my products and sustainable farming practices.</p>
-                            <div class="card-profile d-flex">
-                                <img src="/Images/John.svg" alt="">
-                                <p class="fs-5">John Henry <br> <span class="fs-6">Farmer</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrapper d-flex flex-column gap-5 card3">
-                        <div class="card-top py-4 px-4">
-                            <p class="mb-5 pb-5">Greenarv's platform's user-friendly interface makes it easy to list and manage my products, while their marketing efforts help my farm gain visibility.</p>
-                            <div class="card-profile d-flex ">
-                                <img src="/Images/Mary.svg" alt="">
-                                <p class="fs-5">Mary Adetunji <br><span class="fs-6">Farmer</span></p>
-                            </div>
-                        </div>
-                        <div class="card-bottom py-5 px-4">
-                            <p class="mb-5 pb-5">From farm-fresh eggs to organic herbs, the quality is consistently top-notch. I've never been disappointed with any of my orders.</p>
-                            <div class="card-profile d-flex gap-2">
-                                <img src="/Images/Idris.svg" alt="">
-                                <p class="fs-5">Idris Okoye<br> <span class="fs-6">Customer</span></p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="all-cards-wrapper d-flex justify-content-end gap-5">
+						<div class="card-wrapper d-flex flex-column gap-5 card1">
+							<div class="card-top py-4 px-4">
+								<p class="mb-5 pb-4">I've seen a noticeable reduction in resource wastage and an increase in overall efficiency since I started using Greenarv. It's a powerful tool that empowers farmers with data-driven solutions.</p>
+								<div class="card-profile d-flex gap-3">
+									<img src="/Images/Janet.svg" alt="" class="mt-4">
+									<p class="fs-5 mt-4">Janet Faroye <br><span class="fs-6">Farmer</span></p>
+								</div>
+							</div>
+							<div class="card-bottom py-4 px-4">
+								<p class="mb-5 pb-4">Greenarv is a game-changer for my family's grocery shopping. The convenience of local delivery, combined with the variety of products and the focus on supporting our community, makes it a win-win.</p>
+								<div class="card-profile d-flex gap-3">
+									<img src="/Images/Judith.svg" alt="">
+									<p class="fs-5">Judith Okafor <br> <span class="fs-6">Customer</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="card-wrapper d-flex flex-column gap-5 card2">
+							<div class="card-top py-4 px-4">
+								<p class="mb-5 pb-4">It's a joy to support local farmers while enjoying seasonal fruits and vegetables. The customizable orders and easy-to-use interface make it a breeze to get farm-fresh goodness delivered right to my doorstep.</p>
+								<div class="card-profile d-flex gap-3">
+									<img src="/Images/Caroline.svg" alt="">
+									<p class="fs-5">Caroline Nnaji<br><span class="fs-6">Customer</span></p>
+								</div>
+							</div>
+							<div class="card-bottom py-4 px-4">
+								<p class="mb-5 pb-5">As a farmer, Greenarv has been a game-changer for my business. It connects me directly with local customers, allowing me to showcase my products and sustainable farming practices.</p>
+								<div class="card-profile d-flex gap-3">
+									<img src="/Images/John.svg" alt="" class=" ">
+									<p class="fs-5">John Henry <br> <span class="fs-6">Farmer</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="card-wrapper d-flex flex-column gap-5 card3">
+							<div class="card-top py-4 px-4">
+								<p class="mb-5 pb-5">Greenarv's platform's user-friendly interface makes it easy to list and manage my products, while their marketing efforts help my farm gain visibility.</p>
+								<div class="card-profile d-flex gap-3">
+									<img src="/Images/Mary.svg" alt="" class="mt-5">
+									<p class="fs-5 mt-5">Mary Adetunji <br><span class="fs-6">Farmer</span></p>
+								</div>
+							</div>
+							<div class="card-bottom py-5 px-4">
+								<p class="mb-5 pb-5">From farm-fresh eggs to organic herbs, the quality is consistently top-notch. I've never been disappointed with any of my orders.</p>
+								<div class="card-profile d-flex gap-3">
+									<img src="/Images/Idris.svg" alt="" class="mt-5">
+									<p class="fs-5 mt-5">Idris Okoye<br> <span class="fs-6">Customer</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
             </section>
             <section class="sec6">
                 <div class="sec6-wrapper my-5">
-                    <h2>We are trusted by 1000+ farmers and 3000+ customers</h2>
+                    <h2 class="mb-5">We are trusted by 1000+ farmers and 3000+ customers</h2>
                     <div class="img-wrapper d-flex justify-content-between mt-4">
                         <img src="/Images/platform1.png" alt="">
                         <img src="/Images/platform-2.png" alt="">
@@ -495,10 +503,10 @@
         <footer>
             <section class="footer1 my-4">
                 <div class="footer1-wrapper d-flex py-4 gap-5 align-items-center">
-                    <h2 class="fs-3">Get updates and special offers from us !</h2>
+                    <h2 class="me-5">Get updates and special offers from us !</h2>
                     <form action="" class="d-flex flex-md-nowrap">
-                        <input type="email" placeholder="Enter your email address " class="bg-white py-3 pe-5 ps-3 w-100 border border-light" required>
-                        <button type="submit" class="btn btn-2 px-3">Subscribe</button>
+                        <input type="email" placeholder="Enter your email address " class="bg-white py-3 pe-5 ps-3 border border-light" required>
+                        <button type="submit" class="btn btn-2 px-5">Subscribe</button>
                     </form>
                 </div>
             </section>
@@ -519,7 +527,7 @@
                         </div>
                         <div class="foeeter2-left d-flex justify-content-between ">
                             <div class="footer-links1">
-                                <h2 class="mb-4 fs-4">Products</h2>
+                                <h2 class="mb-4 fs-5">Products</h2>
                                 <ul class="list-unstyled">
                                     <li><a href="">Crop Advisor</a></li>
                                     <li class="my-3"><a href="">Store</a></li>
@@ -527,7 +535,7 @@
                                 </ul>
                             </div>
                             <div class="footer-links1">
-                                <h2 class="mb-4 fs-4">Company</h2>
+                                <h2 class="mb-4 fs-5">Company</h2>
                                 <ul class="list-unstyled">
                                     <li><a href="">About</a></li>
                                     <li class="my-3"><a href="">FAQs</a></li>
@@ -535,7 +543,7 @@
                                 </ul>
                             </div>
                             <div class="footer-links1">
-                                <h2 class="mb-4 fs-4">Legal</h2>
+                                <h2 class="mb-4 fs-5">Legal</h2>
                                 <ul class="list-unstyled">
                                     <li><a href="">Terms</a></li>
                                     <li class="my-3"><a href="">Privacy</a></li>

@@ -40,36 +40,35 @@ li{
 }
 
 .navbar-nav li a{
-    color: #FFF;
+    color: #4E4E4E;
+}
+
+.dropdown-menu{
+    width: 650px !important;
+    height: 300px !important;
+}
+.products-title{
+    color: var(--primary);
 }
 .btn{
-    border-radius: 0;
     border: 1px solid transparent;
     transition:.3s ease all;
     padding: 0.75rem 2.4rem;
-    text-transform: capitalize;
     font-size: 1.15rem;
     letter-spacing: 1px;
 }
-.btn-1{
+.btn-1 , .btn-1:hover{
     background-color: transparent;
-    color: #FFF;
-    border: 2px solid #007400;
+    color: black;
+    border: 1px solid #007400;
 }
-.btn-1:hover{
+
+.btn-2 , .btn-2:hover{
     background-color: var(--primary);
     color: #ECEDEE;
-    border: none;
+    cursor: pointer;
 }
-.btn-2{
-    background-color: var(--primary);
-    color: #ECEDEE;
-}
-.btn-2:hover{
-    color: var(--primary);
-    background-color: transparent;
-    border: 2px solid #007400;
-}
+
 
 
 /* .dropdown2 {
@@ -91,6 +90,7 @@ header{
     height: 100vh !important;
     /* width: 100% !important; */
     margin-bottom: 3.5rem !important;
+
 }
 
 
@@ -99,13 +99,15 @@ header{
 .hero-container {
     width: 100%;
     position: relative;
+    height: 100vh !important;
     /* max-width: 800px; */
 }
 
 .slideshow-container {
     position: relative;
-    width: 100%;
     max-width: 1900px;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .slide {
@@ -113,8 +115,9 @@ header{
 }
 
 .slide img {
-    width: 100%;
-    height: 100vh !important;
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .dot {
@@ -153,11 +156,12 @@ header{
     margin-inline: auto !important;
     color: #FFF;
     position: absolute;
-    bottom: 15%;
-    
+    bottom: 10%;
+    right: 0;
+    left: 0;
 }
 
-.hero-btn{
+.hero-btn, .hero-btn:hover{
     background-color: var(--primary);
     border-radius: 8px;
     color: #fff;

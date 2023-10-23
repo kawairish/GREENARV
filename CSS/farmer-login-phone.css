@@ -15,9 +15,15 @@
     --secondary:#FFBA3F ;
     --text:#4E4E4E;
     --bg: #FFDD90; 
+	--heading: #14365A;
 }
 body{
     font-family: 'Open Sans', sans-serif;
+}
+h1{
+    color: var(--heading);
+    font-size: 28px;
+    font-family: "Bitter", serif;
 }
 a {
 	text-decoration: none;
