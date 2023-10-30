@@ -69,23 +69,6 @@ li{
     cursor: pointer;
 }
 
-
-
-/* .dropdown2 {
-    display: none;
-	gap: 1rem;
-    position: absolute;
-    top: 90%;
-    right: 15%;
-}
-
-.dropdown2-button {
-    background-color: var(--primary);
-    color: #fff;
-    border-radius: 8px;
-    padding: 10px !important;
-    cursor: pointer;
-} */
 header{
     height: 100vh !important;
     /* width: 100% !important; */
@@ -101,6 +84,7 @@ header{
     position: relative;
     height: 100vh !important;
     /* max-width: 800px; */
+    overflow: hidden;
 }
 
 .slideshow-container {
@@ -108,10 +92,12 @@ header{
     max-width: 1900px;
     height: 100vh;
     overflow: hidden;
+    display: flex;
 }
 
 .slide {
     display: none;
+    object-fit: cover;
 }
 
 .slide img {
@@ -140,15 +126,14 @@ header{
   /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 4.5s; /* Extend the duration for slower transition */
-    animation-timing-function: ease; /* Use ease for a smoother transition */
+    animation-duration: 6s; /* Extend the duration for slower transition */
     animation-iteration-count: infinite; /* Optionally, make it loop infinitely */
 }
 
 @keyframes fade {
-    0% { opacity: .7; } /* Start fully visible */
+    0% { opacity: .9; } /* Start fully visible */
     50% { opacity: 1; } /* First image fully visible */
-    100% { opacity: .7; } /* Second image (looping) */
+    100% { opacity: .9; } /* Second image (looping) */
 }
 
 .hero-text {
@@ -167,3 +152,6 @@ header{
     color: #fff;
 }
 
+/* .img2-text{
+    color: #171817;
+} */
