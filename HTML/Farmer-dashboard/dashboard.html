@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+        <link rel="stylesheet" href="/CSS/farmer-dashboard/dashboard.css">
+		<title>Dashboard Page</title>
+	</head>
+	<body>
+		<header class="d-flex">
+            
+            <nav class="navbar navbar-expand-lg fixed-top py-3 pe-5 mx-auto bg-white">
+            <div class="container-fluid gap-md-5 ms-md-5">
+                <a
+                    class="navbar-brand"
+                    href="#"
+                >                    
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse ms-md-5 ps-md-5"
+                    id="navbarTogglerDemo02"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ms-md-5 ps-md-5">
+                        
+                        <li class="nav-item">
+                            
+                        </li>
+                    </ul>
+                    <div class="btn-div d-flex gap-4">
+                        <div class="search-wrapper position-relative">
+                            <input type="search" name="search" id="search" placeholder="Search" class="py-1 px-3"  style="width: 272px;">
+                            <img src="/Images/search-icon.svg" alt="" class="position-absolute search-icon">
+                        </div>
+                        <a href=""><img src="/Images/notifivation-bell.svg" alt=""></a>
+                        <div class="profile">
+                            <img src="/Images/dashboard-pic.svg" alt="">
+                            <img src="/Images/dropdown-arrow.svg" alt="">
+                        </div>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <main class="">
+            <div class="main-wrapper d-flex">
+                <div class="sidebar-container">
+                    <aside class="sidebar">
+                    <div class="logo-wrapper d-flex gap-2 align-items-center mb-5 pt-2 ps-4 pb-3">
+                        <img
+                            src="/Images/logo.png"
+                            alt=""
+                        />
+                        <h3 class="fs-3 fw-normal">GreenArv</h3>
+                    </div>
+                    <a href="./dashboard.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4 active">
+                        <img src="/Images/dashboard-white.svg" alt="">
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="./farm-produce.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/farm-produce-icon.svg" alt="">
+                        <p>Farm Produce</p>
+                    </a>
+                    <a href="./ai-crop-advisor.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/Ai-crop-advisor-icon.svg" alt="">
+                        <p>AI Crop Advisor</p>
+                    </a>
+                    <a href="./new-user-order.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/orders-grey.svg" alt="" class="">
+                        <p>Orders</p>
+                    </a>
+                    <a href="./payment-setup.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/payments-icon.svg" alt="">
+                        <p>Payments</p>
+                    </a>
+                    <a href="./message.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/messages-icon.svg" alt="">
+                        <p>Message</p>
+                    </a>
+                    <a href="./settings.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4" id="settings">
+                        <img src="/Images/settings-icon.svg" alt="">
+                        <p>Settings</p>
+                    </a>
+                    <a href="./help.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/help-icon.svg" alt="">
+                        <p>Help</p>
+                    </a>
+                    <a href="./message.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/logout-icon.svg" alt="">
+                        <p class="logout">Logout</p>
+                    </a>
+                    </aside>
+                </div>
+                <div class="main-content-container">
+                    <div class="main-content mt-5 pt-5 ms-md-4">
+                        <div class="top-div d-flex justify-content-between align-items-center me-4 mb-4">
+                        <div class="title">
+                            <h2>Welcome Greenvalley Farm</h2>
+                            <p>Eu sapien neque nullam morbi magna elementum. Porta metus at morbi <br> pellentesque sed nibh enim vulputate.</p>
+                        </div>
+                        <div class="left-title d-flex align-items-center gap-4">
+                            <form action="" class="">
+                                <select name="" id="" class="fs-3 fw-semibold">
+                                    <option value="" selected>2023</option>
+                                    <option value="">2024</option>
+                                    <option value="">2025</option>
+                                    <option value="">2026</option>
+                                    <option value="">2027</option>
+                                    <option value="">2028</option>
+                                    <option value="">2029</option>
+                                    <option value="">2030</option>
+                                </select>
+                            </form>
+                            <div class="add-btn">
+                                <button type="submit" class="text-white btn-add">
+                                    <img src="/Images/plus.svg" alt=""> List Crop
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="second-div d-flex gap-3">
+                        <div class="produce-wrapper">
+                            <div class="card card1 py-3 px-3">
+                                <div class="title d-flex justify-content-between mb-3">
+                                    <h3>Total Produce Listed</h3>
+                                    <a href="" style="color:  #007400;">See all</a>
+                                </div>
+                                <div class="titles d-flex mb-3">
+                                    <p>Product</p>
+                                    <p>Price</p>
+                                    <p>Quantity</p>
+                                    <p>Status</p>
+                                </div>
+                                <div class="prod d-flex align-items-center gap-5 pb-3 mb-3">
+                                    <div class="product-img"><img src="/Images/onions.png" alt=""> <span class="ms-2">Onions</span></div>
+                                <p class="pq">45,000</p>
+                                <p class="pq px-5 mx-4">34tons</p>
+                                <p class="active-status"><img src="/Images/active-dot.svg" alt=""> Active</p>
+                                <div class="img-wrapper ms-5">
+                                    <img src="/Images/edit-icon.svg" alt="" class="edit-img py-2 px-2 rounded-circle">
+                                    <img src="/Images/delete-icon.svg" alt="" class="delete-img py-2 px-2 rounded-circle">
+                                </div>
+                                </div>
+                                <div class="prod d-flex align-items-center gap-5 pb-3 mb-3">
+                                    <div class="product-img"><img src="/Images/mangos.png" alt=""> <span class="ms-2">Mangos</span></div>
+                                <p class="pq">25,000</p>
+                                <p class="pq px-5 ms-2">14tons</p>
+                                <p class="exhausted-status ms-4 ps-2"><img src="/Images/exhausted-dot.svg" alt=""> Exhausted</p>
+                                <div class="img-wrapper ms-3 ps-1">
+                                    <img src="/Images/edit-icon.svg" alt="" class="edit-img py-2 px-2 rounded-circle">
+                                    <img src="/Images/delete-icon.svg" alt="" class="delete-img py-2 px-2 rounded-circle">
+                                </div>
+                                </div>
+                                <div class="prod d-flex align-items-center gap-5 mb-3 border-0">
+                                    <div class="product-img"><img src="/Images/maize.png" alt=""> <span class="ms-2">Maize</span></div>
+                                <p class="pq ms-2">75,000</p>
+                                <p class="pq px-5 mx-4">40tons</p>
+                                <p class="active-status"><img src="/Images/active-dot.svg" alt=""> Active</p>
+                                <div class="img-wrapper ms-5">
+                                    <img src="/Images/edit-icon.svg" alt="" class="edit-img py-2 px-2 rounded-circle">
+                                    <img src="/Images/delete-icon.svg" alt="" class="delete-img py-2 px-2 rounded-circle">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activities-wrapper">
+                            <div class="card card2 py-3">
+                                <div class="card-title d-flex justify-content-between pb-2 mb-3">
+                                    <h3 class="ps-2">Recent Activities</h3>
+                                    <button class="num-btn px-2 py-1 border-0 text-white me-2">6</button>
+                                </div>
+                                <div class="card-content ms-2">
+                                    <div class="content-wrapper d-flex">
+                                        <div class="profile-wrap d-flex gap-2">
+                                            <div class="prof-imgs position-relative">
+                                                <img src="/Images/salam.svg" alt="">
+                                                <img src="/Images/active-2.svg" alt="" class="active-img position-absolute">
+                                            </div>
+                                            <div class="profile-text">
+                                                <h4 class="">Faheedah Salam</h4>
+                                                <p>You have received a message.</p>
+                                            </div>
+                                            <p class="time">5mins ago</p>
+                                    </div>
+                                    </div>
+                                    <div class="content-wrapper d-flex gap-2 my-3">
+                                        <div class="profile-wrap d-flex gap-2">
+                                            <div class="prof-imgs position-relative">
+                                                <img src="/Images/Ai.svg" alt="">
+                                            </div>
+                                            <div class="profile-text">
+                                                <h4 class="">There's a new update on <br> our AI model <a href="">Tap to <br> update.</a></h4>
+                                            </div>
+                                        </div>
+                                        <p class="time">35mins ago</p>
+                                    </div>
+                                    <div class="content-wrapper d-flex justify-content-between">
+                                        <div class="profile-wrap d-flex gap-2">
+                                            <div class="prof-imgs position-relative">
+                                                <img src="/Images/maize-c.svg" alt="">
+                                            </div>
+                                            <div class="profile-text">
+                                                <h4 class="">You have listed a <br> new produce</h4>
+                                            </div>
+                                        </div>
+                                        <p class="time">3hrs ago</p>
+                                    </div>
+                                    <div class="content-wrapper d-flex justify-content-center mt-4 pt-3">
+                                        <button class="px-3 py-1">View all</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- graph -->
+                        <div id="container" class="my-5"></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <script type="module">
+			import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+
+			// Get dataset
+			const fruit = [
+				{ date: "Jan", fruit: "Sales", value: 2 },
+				{ date: "Jan", fruit: "Stock", value: 1 },
+				{ date: "Feb", fruit: "Sales", value: 10 },
+				{ date: "Feb", fruit: "Stock", value: 2 },
+				{ date: "Mar", fruit: "Sales", value: 20 },
+				{ date: "Mar", fruit: "Stock", value: 5 },
+				{ date: "Apr", fruit: "Sales", value: 15 },
+				{ date: "Apr", fruit: "Stock", value: 13 },
+				{ date: "May", fruit: "Sales", value: 13 },
+				{ date: "May", fruit: "Stock", value: 20 },
+				{ date: "Jun", fruit: "Sales", value: 10 },
+				{ date: "Jun", fruit: "Stock", value: 30 },
+				{ date: "Jul", fruit: "Sales", value: 25 },
+				{ date: "Jul", fruit: "Stock", value: 33 },
+				{ date: "Aug", fruit: "Sales", value: 20 },
+				{ date: "Aug", fruit: "Stock", value: 25 },
+				{ date: "Sep", fruit: "Sales", value: 18 },
+				{ date: "Sep", fruit: "Stock", value: 28 },
+				{ date: "Oct", fruit: "Sales", value: 15 },
+				{ date: "Oct", fruit: "Stock", value: 30 },
+				{ date: "Nov", fruit: "Sales", value: 12 },
+				{ date: "Nov", fruit: "Stock", value: 35 },
+				{ date: "Dec", fruit: "Sales", value: 40 },
+				{ date: "Dec", fruit: "Stock", value: 16 },
+			];
+
+			// Declare the months array
+			const months = [
+				"Jan",
+				"Feb",
+				"Mar",
+				"Apr",
+				"May",
+				"Jun",
+				"Jul",
+				"Aug",
+				"Sep",
+				"Oct",
+				"Nov",
+				"Dec",
+			];
+
+			// Declare the chart dimensions and margins.
+			const width = 900;
+			const height = 469;
+			const paddingLine = 30;
+			const marginTop = 80;
+			const marginRight = 50;
+			const marginBottom = 30;
+			const marginLeft = 80;
+			const lengendSize = 150;
+			const lengendX = width + marginRight;
+			const lengendY = marginRight;
+            const colorArray = [ "#007400", "#FFB900" ]
+
+			// Declare the x (horizontal position) scale.
+			const x = d3
+				.scaleBand()
+				.domain(months)
+				.range([marginLeft, width - marginRight]);
+
+			// Declare the y (vertical position) scale.
+			const y = d3
+				.scaleLinear()
+				.domain([0, d3.max(fruit, (d) => d.value)])
+				.range([height - marginBottom, marginTop]);
+
+			// Declare the color
+			const color = d3
+				.scaleOrdinal()
+				.domain(fruit.map((d) => d.fruit))
+				.range(d3.schemeCategory10);
+
+			// Create the SVG container.
+			const svg = d3
+				.create("svg")
+				.attr("width", width)
+				.attr("height", height)
+				.attr("viewBox", [0, 0, width, height])
+				.attr("class", "graphContainer");
+
+			// Add the x-axis.
+			svg
+				.append("g")
+				.attr("transform", `translate(0,${height - marginBottom})`)
+				.call(
+					d3
+						.axisBottom(x)
+						.ticks(width / 5)
+						.tickSize(0)
+						.tickSizeOuter(0)
+				);
+
+			// Add the y-axis.
+			svg
+				.append("g")
+				.attr("transform", `translate(${marginLeft}, 0)`)
+				.call(
+					d3
+						.axisLeft(y)
+						.ticks(height / 80)
+						.tickSize(-width + marginRight * 2)
+						.tickSizeOuter(0)
+				);
+
+			// Add title
+			const title = svg
+				.append("g")
+				.attr("transform", `translate(${marginBottom},0)`)
+				.attr("id", "overview")
+				.style("font-size", "22px")
+				.attr("x", marginBottom)
+				.attr("y", marginTop / 2);
+
+			// Append text for the title
+			title
+				.append("text")
+				.text("Overview")
+				.attr("class", "overview")
+                .attr("fill", "#4E4E4E")
+				.style("font-size", "22px")
+				.attr("x", marginBottom )
+				.attr("y", marginTop / 2);
+
+			// Append line under text
+			title
+				.append("rect")
+				.attr("width", 60)
+				.attr("height", 4)
+				.attr("fill", "#007400")
+				.attr("transform", `translate(${marginBottom},${marginTop / 2 + 3})`);
+
+			// Add units for y-axis
+			svg
+				.append("text")
+				.text("In Tons")
+				.attr("id", "units")
+                .attr("fill", "#4E4E4E")
+				.style("font-size", "22px")
+				.style("font-weight", "600")
+				.attr("x", marginBottom * -7)
+				.attr("y", 45)
+				.attr("transform", "rotate(270)");
+
+			// Add a container for each series.
+			const serie = svg
+				.append("g")
+				.selectAll()
+				.data(d3.group(fruit, (d) => d.fruit))
+				.join("g");
+
+			// Draw the lines.
+			serie
+				.append("path")
+				.attr("fill", "none")
+				.attr("transform", `translate(${paddingLine})`)
+				.attr("stroke", (d) => color(d[0]))
+				.attr("stroke-width", 1.5)
+				.attr("d", (d, i) =>
+					(i % 2 === 0
+						? d3.line()
+						: d3.line().curve(d3.curveCatmullRom.alpha(0.5))
+					)
+						.x((d) => x(d.date))
+						.y((d) => y(d.value))(d[1])
+				);
+
+			// Append circle for each point on the line
+			serie
+				.selectAll("circle")
+				.data((d) => d[1])
+				.enter()
+				.append("circle")
+				.attr("class", "circle")
+				.attr("cx", (d) => x(d.date))
+				.attr("cy", (d) => y(d.value))
+				.attr("r", (d) => (d.fruit === "Sales" ? 5 : 0))
+				.attr("fill", "#007400")
+				.attr("transform", `translate(${paddingLine})`);
+
+			// Append legend
+			const legendItemSize = 8;
+			const legendSpacing = 17;
+			const xOffset = 10;
+			const yOffset = 10;
+			const legend = svg
+				.append("g")
+				.attr("id", "legend")
+				.attr("width", 50)
+				.attr("height", 50)
+				.attr("x", width - marginRight * 2)
+				.attr("y", 10)
+				.selectAll()
+				.data(d3.group(fruit, (d) => d.fruit)) // [Sales, Stock]
+				.join("g");
+
+			legend
+				.append("circle")
+				.attr("class", "legendItem")
+				.attr("cx", 1)
+				.attr("cy", 12)
+                .attr("r", 9)
+				.attr("fill", (d) => color(d[0]))
+				.attr("transform", (d, i) => {
+					const x = width - marginRight * 3;
+					const y = yOffset + (legendItemSize + legendSpacing) * i;
+					return `translate(${x}, ${y})`;
+				});
+
+			legend
+				.append("text")
+				.attr("x", 5)
+				.attr("y", 12)
+				.text((d) => d[0])
+                .attr("fill", "#4E4E4E")
+				.style("font-size", "20px")
+                .style("font-weight", "600")
+				.attr("transform", (d, i) => {
+					const x = width - marginRight * 3 + 10;
+					const y = yOffset + (legendItemSize + legendSpacing) * i + 6 ;
+					return `translate(${x}, ${y})`;
+				});
+
+			// Append the SVG element.
+			container.append(svg.node());
+		</script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+        <script src="/dashboard.js"></script>
+	</body>
+</html>

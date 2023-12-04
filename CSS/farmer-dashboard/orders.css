@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&display=swap");
+
+* {
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box;
+	font-family: "Bitter", serif;
+	font-family: "Lora", serif;
+	font-family: "Open Sans", sans-serif;
+	.mySlides {
+		display: none;
+	}
+	/* img {vertical-align: middle;} */
+}
+:root {
+	--primary: #007400;
+	--secondary: #ffba3f;
+	--text: #4e4e4e;
+	--bg: #ffdd90;
+	--title: #008281;
+	--dashboard: #eeffef;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+}
+a {
+	text-decoration: none;
+	color: var(--text);
+}
+li {
+	list-style: none;
+}
+
+.search-icon {
+	top: 17%;
+	right: 5%;
+}
+body {
+	background-color: #f3f8f4;
+}
+header {
+	width: 100% !important;
+}
+.navbar {
+	width: 80% !important;
+	margin-right: 0 !important;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background: var(--white-100, #fff);
+	box-shadow: 0px 4px 6px 3px rgba(34, 34, 34, 0.1);
+	z-index: 100;
+}
+.main-wrapper {
+	width: 100%;
+	position: relative;
+}
+.sidebar-container{
+	width: 20% !important;
+	height: 100vh;
+	flex-shrink: 0;
+	background-color: var(--dashboard);
+	box-shadow: 0px 4px 6px 3px rgba(229, 219, 219, 0.1);
+	overflow: hidden;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+}
+.sidebar {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.aside h3,
+.aside .link-wrapper p {
+	font-family: "Open Sans", sans-serif;
+}
+aside .link-wrapper {
+	width: 100% !important;
+}
+.aside .link-wrapper p,
+.main-content .link-wrapper .first-a,
+.card p {
+	color: var(--text);
+	font-size: 20px !important;
+}
+.active {
+	background-color: var(--primary);
+	color: #fff;
+}
+
+#settings {
+	margin-top: 8rem !important;
+}
+.logout {
+	color: #fe2b25;
+}
+.main-content-container {
+	width: 80% !important;
+	height: 150vh;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+}
+.main-content {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.main-content::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar, .card-content::-webkit-scrollbar {
+    display: none;
+}
+.sidebar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.main-content h2 {
+	color: var(--text);
+	font-weight: 600;
+	font-size: 32px !important;
+}
+
+.main-content .link-wrapper a {
+	color: #8b919c;
+	font-size: 20px !important;
+	font-weight: 600;
+}
+
+.main-content .card {
+	width: 95%;
+	height: 500px;
+    border-radius: 8px !important;
+	background-color: #f9f9f9;
+	box-shadow: 0px 4px 6px 3px rgba(242, 240, 240, 0.4);
+    overflow: hidden;
+    margin-bottom: 5rem !important;
+	z-index: 30;
+}
+.main-content .card .card-content {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+.item-container {
+    width: 100%;
+    height: 100% !important;
+}
+.main-content .card::-webkit-scrollbar{
+	display: none;
+}
+
+/* table .items{
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+} */
+table .table-head {
+	background-color: #effdf1;
+}
+table th {
+	padding: 10px !important;
+	color: #222;
+	font-weight: 400;
+	font-size: 16px;
+}
+table tr {
+	height: 65px !important;
+	flex-shrink: 0;
+}
+table td {
+	color: var(--text);
+	padding-inline: 10px 0px !important;
+	font-size: 14px !important;
+	height: 65px !important;
+	font-weight: 600;
+    border-bottom: 1px solid #EAEBEA;
+}
+table .pending-status {
+	background-color: #f5d9d7;
+	border-radius: 16px;
+    padding: 3px 6px !important;
+    width: 75%;
+}
+table .dispatched-status {
+	background-color: #d6f8b9;
+	border-radius: 16px;
+    padding: 3px 6px !important;
+    width: 80%;
+}
+table .completed-status {
+	background-color: #eeeeee;
+	border-radius: 16px;
+    padding: 3px 6px !important;
+    width: 80%;
+}
+.table-hover:hover, .table-hover:hover td {
+    background-color: var(--primary);
+    color: white !important;
+}
+.table-hover:hover .last-tr {
+    color: var(--text) !important;
+}

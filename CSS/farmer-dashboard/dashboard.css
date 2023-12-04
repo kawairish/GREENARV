@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&display=swap");
+
+* {
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box;
+	font-family: "Bitter", serif;
+	font-family: "Lora", serif;
+	font-family: "Open Sans", sans-serif;
+	.mySlides {
+		display: none;
+	}
+	/* img {vertical-align: middle;} */
+}
+:root {
+	--primary: #007400;
+	--secondary: #ffba3f;
+	--text: #4e4e4e;
+	--bg: #ffdd90;
+	--title: #008281;
+	--dashboard: #eeffef;
+	--text-primary: #14365a;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+}
+a {
+	text-decoration: none;
+	color: var(--text);
+}
+li {
+	list-style: none;
+}
+
+.search-icon {
+	top: 17%;
+	right: 5%;
+}
+
+header {
+	width: 100% !important;
+}
+.navbar {
+	width: 80% !important;
+	margin-right: 0 !important;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background: var(--white-100, #fff);
+	box-shadow: 0px 4px 6px 3px rgba(34, 34, 34, 0.1);
+}
+.main-wrapper {
+	width: 100%;
+	position: relative;
+}
+.sidebar-container {
+	width: 20% !important;
+	height: 100vh;
+	flex-shrink: 0;
+	background-color: var(--dashboard);
+	box-shadow: 0px 4px 6px 3px rgba(229, 219, 219, 0.1);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 10;
+}
+.sidebar {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.aside h3,
+.aside .link-wrapper p {
+	font-family: "Open Sans", sans-serif;
+}
+aside .link-wrapper {
+	width: 100% !important;
+}
+.aside .link-wrapper p,
+.main-content .link-wrapper .first-a {
+	color: var(--text);
+	font-size: 20px !important;
+}
+.active {
+	background-color: var(--primary);
+	color: #fff;
+}
+
+#settings {
+	margin-top: 8rem !important;
+}
+.logout {
+	color: #fe2b25;
+}
+.main-content-container {
+	width: 80%;
+	height: 190vh;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+}
+.main-content {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.main-content::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.main-content {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.main-content h2 {
+	color: var(--primary);
+	font-size: 28px !important;
+	font-weight: 600;
+}
+select {
+	border: 0;
+	color: var(--text-primary);
+}
+select:focus {
+	outline: 0;
+}
+.btn-add {
+	background-color: var(--primary);
+	border: 0;
+	border-radius: 4px !important;
+	padding: 4px 6px !important;
+}
+.top-div form {
+	border-left: 2px solid #d9d9d9;
+	border-right: 2px solid #d9d9d9;
+	padding: 7px 20px !important;
+}
+.main-content .card {
+	background-color: var(--dashboard);
+	border: 0;
+}
+.card1 {
+	width: 750px !important;
+	height: 315px;
+	flex-shrink: 0;
+}
+.card2 {
+	width: 280px;
+	height: 315px;
+	flex-shrink: 0;
+}
+.main-content h3 {
+	color: var(--text);
+	font-size: 20px !important;
+	font-weight: 600;
+}
+.card1 .titles {
+	color: var(--text);
+	gap: 7rem !important;
+}
+.pq {
+	font-size: 14px !important;
+}
+.active-status {
+	color: var(--primary);
+	font-size: 14px !important;
+}
+.exhausted-status {
+	color: #fe2b25;
+	font-size: 14px !important;
+}
+.edit-img {
+	background-color: #c6fecc;
+}
+.delete-img {
+	background-color: #ffe5e4;
+}
+.prod {
+	border-bottom: 2px solid #eaebea;
+}
+.card2 .num-btn {
+    background-color: var(--primary);
+    border-radius: 8px;
+}
+.card2 .card-title {
+    border-bottom:  2px solid #DCE1DD;
+}
+.active-img {
+    bottom: 8%;
+    right: -10%;
+}
+.profile-text h4{
+    color: var(--text);
+    font-size: 14px !important;
+    font-weight: 400;
+}
+.profile-text p {
+    color: #8B919C;
+    font-size: 12px !important;
+}
+.card2 .time {
+    color: var(--text);
+    font-size: 12px !important;
+}
+.profile-text a {
+    color: var(--primary);
+    text-decoration: underline;
+    font-size: 12px !important;
+}
+.card2 button {
+    border:  1px solid var(--primary);
+    border-radius: 8px;
+    color: var(--primary);
+    font-size: 12px !important;
+    background-color: var(--dashboard);
+}
+
+
+#container {
+	width: 97%;
+	height: 469px;
+	background-color: #FFFCEF;
+}
+
+.graphContainer {
+	width: 100%;
+	background-color: rgb(255, 254, 222);
+	max-width: 100%;
+	height: auto;
+	font: 10px sans-serif;
+}
+.overview{
+    color: #4E4E4E;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#container > svg > g:nth-child(2) > g:not(:nth-child(2)) > line {
+	color: #ccc;
+	stroke-width: 2;
+	stroke-dasharray: 5.5;
+}

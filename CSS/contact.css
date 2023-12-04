@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 * {
 	margin: 0 !important;
@@ -7,6 +7,7 @@
 	font-family: "Bitter", serif;
 	font-family: "Lora", serif;
 	font-family: "Open Sans", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	.mySlides {
 		display: none;
 	}
@@ -88,6 +89,11 @@ header {
 	line-height: normal;
 	letter-spacing: 1.5px;
 }
+
+.sec1-wrapper, .sec6-wrapper, .footer1-wrapper, .footer2-wrapper {
+	width: 90%;
+	margin-inline: auto !important;
+}
 .sec1 h2 {
 	color: var(--title);
 	font-family: Open Sans;
@@ -98,4 +104,78 @@ header {
 	color: var(--text);
 	font-family: "Lora", serif;
 	font-size: 36px !important;
+}
+.sec1 .contact-wrapper {
+	overflow: hidden;
+	display: flex;
+	gap: 0 !important;
+}
+.sec1 .img-wrapper {
+	background-image: url(/Images/green-rectangle.png);
+	background-repeat: no-repeat;
+	object-fit: cover !important;
+	width: 460px;
+	height: 640px;
+	padding-left: 2.5rem !important;
+	padding-top: 3rem !important;
+	overflow: hidden;
+}
+
+.sec1 a {
+	color: #fff;
+	font-size: 24px !important;
+}
+.ellipse {
+	width: 269px;
+	height: 269px;
+	border-radius: 269px;
+	background: rgba(255, 186, 63, 0.9);
+	bottom: -20%;
+	right: -25%;
+	overflow: hidden;
+}
+.sec1 .img1 {
+	position: absolute;
+	bottom: 9%;
+	right: 7%;
+}
+
+.sec1 .icons {
+	bottom: 5%;
+}
+.sec1 .icons img {
+	width: 20px;
+	height: 15px;
+	flex-shrink: 0;
+}
+
+.sec1 .card {
+	background: var(--white-100, #fff);
+	box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+}
+.sec1 .card p {
+	color: var(--text);
+	font-size: 20px !important;
+	font-family: 'Poppins', sans-serif;
+}
+.sec1 .card input {
+	border-right: 0 !important;
+	border-top: 0 !important;
+	border-left: 0 !important;
+	border-bottom: 2px solid #8D8D8D !important;
+}
+.select input{
+	font-family: "Lora", serif;
+}
+.card label{
+	color: var(--text);
+	font-family: "Lora", serif;
+	font-size: 16px !important;
+}
+
+.sec6 h2{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+    font-size: 36px;
+    font-weight: 700;
 }

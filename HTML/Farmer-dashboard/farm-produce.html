@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+        <link rel="stylesheet" href="/CSS/farmer-dashboard/new-user-order.css">
+		<title>New User Order Page</title>
+	</head>
+	<body>
+		<header class="d-flex">
+            
+            <nav class="navbar navbar-expand-lg fixed-top py-3 pe-5 mx-auto bg-white">
+            <div class="container-fluid gap-md-5 ms-md-5">
+                <a
+                    class="navbar-brand"
+                    href="#"
+                >                    
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse ms-md-5 ps-md-5"
+                    id="navbarTogglerDemo02"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ms-md-5 ps-md-5">
+                        
+                        <li class="nav-item">
+                            
+                        </li>
+                    </ul>
+                    <div class="btn-div d-flex gap-4">
+                        <div class="search-wrapper position-relative">
+                            <input type="search" name="search" id="search" placeholder="Search" class="py-1 px-3"  style="width: 272px;">
+                            <img src="/Images/search-icon.svg" alt="" class="position-absolute search-icon">
+                        </div>
+                        <a href=""><img src="/Images/notifivation-bell.svg" alt=""></a>
+                        <div class="profile">
+                            <img src="/Images/dashboard-pic.svg" alt="">
+                            <img src="/Images/dropdown-arrow.svg" alt="">
+                        </div>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <main class="">
+            <div class="main-wrapper d-flex">
+                <div class="sidebar-container">
+                    <aside class="sidebar">
+                    <div class="logo-wrapper d-flex gap-2 align-items-center mb-5 pt-2 ps-4 pb-3">
+                        <img
+                            src="/Images/logo.png"
+                            alt=""
+                        />
+                        <h3 class="fs-3 fw-normal">GreenArv</h3>
+                    </div>
+                    <a href="./dashboard.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/dashboard-icon.svg" alt="">
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="./farm-produce.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4 active">
+                        <img src="/Images/farm-produce-white.svg" alt="">
+                        <p>Farm Produce</p>
+                    </a>
+                    <a href="./ai-crop-advisor.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/Ai-crop-advisor-icon.svg" alt="">
+                        <p>AI Crop Advisor</p>
+                    </a>
+                    <a href="./new-user-order.html" class="link-wrapper d-flex gap-3 align-items-center mb-4  ps-4">
+                        <img src="/Images/orders-grey.svg" alt="" class="">
+                        <p>Orders</p>
+                    </a>
+                    <a href="./payment-setup.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/payments-icon.svg" alt="">
+                        <p>Payments</p>
+                    </a>
+                    <a href="./message.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/messages-icon.svg" alt="">
+                        <p>Message</p>
+                    </a>
+                    <a href="./settings.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4" id="settings">
+                        <img src="/Images/settings-icon.svg" alt="">
+                        <p>Settings</p>
+                    </a>
+                    <a href="./help.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/help-icon.svg" alt="">
+                        <p>Help</p>
+                    </a>
+                    <a href="./message.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                        <img src="/Images/logout-icon.svg" alt="">
+                        <p class="logout">Logout</p>
+                    </a>
+                    </aside>
+                </div>
+                <div class="main-content-container">
+                    <div class="main-content mt-5 pt-5 ms-md-5">
+                    <h2>Farm Produce</h2>
+                    <div class="link-wrapper d-flex gap-5 mt-5 mb-4">
+                        <a href="" class="fw-semibold first-a">All</a>
+                        <a href="">Active</a>
+                        <a href="">Draft</a>
+                        <a href="">Deactivated</a>
+                    </div>
+                    <div class="card border-0 d-flex justify-content-center align-items-center mb-5 position-relative">
+                        <h3 class="position-absolute top-0 start-0 p-3 fs-5 fw-semibold">No Produce</h3>
+                        <div class="content d-flex flex-column justify-content-center align-items-center">
+                            <h2 class="mb-2 text-center">You are yet to add any produce.</h2>
+                            <button type="button" id="setup-btn" class="px-5 py-2 fs-6 border-0 btn-store mt-3">Set up store</button>
+                            <!-- store setup popup -->
+                    <div class="store-setup" id="setup-card">
+                        <div class="store-card" >
+                            <div class="title d-flex my-4 justify-content-between align-items-center">
+                                <h4>Set up your store</h4>
+                                <img src="/Images/close-store-card.svg" alt="" onclick="window.location.href='./farm-produce.html'">
+                            </div>
+                            <hr class="mb-5">
+                            <div class="form">
+                                <form action="">
+                                    <div class="input-div ms-3">
+                                        <p class="mb-2">Store Name</p>
+                                        <input type="text" name="" id="" required class="py-2 ps-2">
+                                    </div>
+                                    <div class="input-div my-4 ms-3">
+                                        <p class="mb-2">Store Description <span class="fs-6 fw-normal" style="color: #8B919C;font-style: italic;">(Optional)</span></p>
+                                        <textarea name="myTextarea" id="myTextarea" cols="53" required placeholder="Give a brief description of your store, you can include what you sell, your location and how fast you can deliver." rows="5" class="py-2 px-4"></textarea>
+                                    </div>
+                                    <div class="input-div ms-3 position-relative">
+                                        <p class="mb-2">Store URL</p>
+                                        <input type="url" name="storeUrl" id="storeUrl" placeholder="https://storename.greenarv.com" required class="py-2 ps-4">
+                                        <img src="/Images/Url.svg" alt="" class="position-absolute url-img">
+                                    </div>
+                                    <div class="input-div my-4 ms-3">
+                                        <p class="mb-2">Store Banner <span class="fs-6 fw-normal" style="color: #8B919C; font-style: italic;">(Optional)</span></p>
+                                        <h6 class="text-black mb-3" style="font-size: 14px; font-weight: 400;">When you share a link to your store, an image is usually shown in your post. <a href="#" style="color: #007400;" id="preview-link">See a preview</a></h6>
+                                        <div class="img-upload position-relative">
+                                            <img src="/Images/img-upload.svg" alt="" class="position-absolute" id="profile-picture">
+                                            <input type="file" id="profilePicture" accept="image/*" class="position-absolute input-img">
+                                        </div>
+                                    </div>
+                                    <div class="input-div ms-3 d-flex justify-content-end gap-3">
+                                        <button class="btn1 px-5 py-2 border-0" onclick="window.location.href='./farm-produce.html'">Cancel</button>
+                                        <button class="btn2 px-5 py-2 border-0" onclick="window.location.href='./store-ready.html'">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store-preview" id="preview-card">
+                        <div class="preview-card">
+                            <div class="title d-flex my-4 justify-content-between align-items-center">
+                                <h4>Set up your store</h4>
+                                <img src="/Images/close-store-card.svg" alt="" onclick="window.location.href='./farm-produce.html'">
+                            </div>
+                            <hr class="mb-5">
+                            <div class="form">
+                                <form action="">
+                                    <div class="input-div ms-3">
+                                        <p class="mb-2">Store Name</p>
+                                        <input type="text" name="" id="" required class="py-2 ps-2" placeholder="M.Holdings">
+                                    </div>
+                                    <div class="input-div my-4 ms-3">
+                                        <p class="mb-2">Store Description <span class="fs-6 fw-normal" style="color: #8B919C;font-style: italic;">(Optional)</span></p>
+                                        <textarea name="myTextarea" id="myTextarea" cols="53" required placeholder="We are your source for premium grains! we specialize in rice, wheat and barley to nourish your family with the finest crops." rows="5" class="py-2 px-4"></textarea>
+                                    </div>
+                                    <div class="input-div ms-3 position-relative">
+                                        <p class="mb-2">Store URL</p>
+                                        <input type="url" name="storeUrl" id="storeUrl" placeholder="https://mholdings.greenarv.com" required class="py-2 ps-4">
+                                        <img src="/Images/Url.svg" alt="" class="position-absolute url-img">
+                                    </div>
+                                    <div class="input-div my-4 ms-3">
+                                        <p class="mb-2">Store Banner <span class="fs-6 fw-normal" style="color: #8B919C; font-style: italic;">(Optional)</span></p>
+                                        <h6 class="text-black mb-3" style="font-size: 14px; font-weight: 400;">When you share a link to your store, an image is usually shown in your post. <a href="#" style="color: #007400;">See a preview</a></h6>
+                                        <div class="img-upload position-relative">
+                                            <img src="/Images/store-img.png" alt="" class="position-absolute" id="profile-picture">
+                                            <input type="file" id="profilePicture" accept="image/*" class="position-absolute input-img">
+                                        </div>
+                                    </div>
+                                    <div class="input-div ms-3 d-flex justify-content-end gap-3">
+                                        <button class="btn1 px-5 py-2 border-0" onclick="window.location.href='./farm-produce.html'">Cancel</button>
+                                        <button class="btn2 px-5 py-2 border-0" onclick="window.location.href='./store-ready.html'">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+
+                    
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+        <script src="/store.js"></script>
+        <script src="/dashboard.js"></script>
+	</body>
+</html>

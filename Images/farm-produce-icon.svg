@@ -1,0 +1,10 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="add_business">
+<mask id="mask0_987_1513" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+<rect id="Bounding box" width="28" height="28" fill="#D9D9D9" style="fill:#D9D9D9;fill:color(display-p3 0.8510 0.8510 0.8510);fill-opacity:1;"/>
+</mask>
+<g mask="url(#mask0_987_1513)">
+<path id="add_business_2" d="M21.0003 26.8334V23.3334H17.5003V21.0001H21.0003V17.5001H23.3337V21.0001H26.8337V23.3334H23.3337V26.8334H21.0003ZM2.33366 23.3334V16.3334H1.16699V14.0001L2.33366 8.16675H19.8337L21.0003 14.0001V16.3334H19.8337V19.8334H17.5003V16.3334H12.8337V23.3334H2.33366ZM4.66699 21.0001H10.5003V16.3334H4.66699V21.0001ZM2.33366 7.00008V4.66675H19.8337V7.00008H2.33366ZM3.55866 14.0001H18.6087L17.9087 10.5001H4.25866L3.55866 14.0001Z" fill="#8C909B" style="fill:#8C909B;fill:color(display-p3 0.5490 0.5647 0.6078);fill-opacity:1;"/>
+</g>
+</g>
+</svg>
