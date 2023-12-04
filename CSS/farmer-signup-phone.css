@@ -1,97 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&display=swap");
 
-*{
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-    font-family: 'Bitter', serif;
-    font-family: 'Lora', serif;
-    font-family: 'Open Sans', sans-serif;
-    .mySlides {display: none;}
-    /* img {vertical-align: middle;} */
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: "Bitter", serif;
+  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
+  /* img {vertical-align: middle;} */
 }
-:root{
-    --primary: #007400;
-    --secondary:#FFBA3F ;
-    --text:#4E4E4E;
-    --bg: #FFDD90; 
-	--heading: #14365A;
+.mySlides {
+  display: none;
 }
-body{
-    font-family: 'Open Sans', sans-serif;
+
+:root {
+  --primary: #007400;
+  --secondary: #ffba3f;
+  --text: #4e4e4e;
+  --bg: #ffdd90;
+  --heading: #14365a;
 }
-h1{
-    color: var(--heading);
-    font-size: 28px;
-    font-family: "Bitter", serif;
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  color: var(--heading);
+  font-size: 28px;
+  font-family: "Bitter", serif;
 }
 a {
-	text-decoration: none;
-    color: #4E4E4E;
+  text-decoration: none;
+  color: #4e4e4e;
 }
 .signup-section .signup-container {
-	width: 95% !important;
-	height: 100vh !important;
+  width: 95% !important;
+  height: 100vh !important;
 }
 .signup-image-wrapper {
-	width: 50% !important;
-	height: 100% !important;
+  width: 50% !important;
+  height: 100% !important;
 }
 .signup-image-wrapper img {
-	height: 194% !important;
+  height: 194% !important;
 }
 .signup-content {
-	width: 45% !important;
-	margin-top: 3rem !important;
-	height: 100% !important;
+  width: 45% !important;
+  margin-top: 3rem !important;
+  height: 100% !important;
 }
-.signup-content .link1{
-    color: var(--primary);
-    border-bottom: 2px solid var(--primary);
+
+.registrationLabel {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
-.signup-content hr {
+/* .signup-content hr {
 	border: 2px solid #a7a4a4;
-}
-.phone-img{
-    width: 5% !important;
+} */
+.phone-img {
+  width: 5% !important;
 }
 .signup-btn {
-	background-color: var(--primary);
-	border-radius: 0;
+  background-color: var(--primary);
+  border-radius: 0;
 }
 .signup-btn:hover {
-	background-color: var(--primary);
+  background-color: var(--primary);
 }
 .input-a {
-	color: var(--primary);
-	text-decoration: none;
+  color: var(--primary);
+  text-decoration: none;
 }
 .signup-options {
-	position: relative;
-	margin-bottom: 3rem !important;
+  position: relative;
+  margin-bottom: 3rem !important;
 }
 
 .signup-content h2 {
-	background-color: white !important;
-	padding-inline: 1rem !important;
-	color: #a7a4a4;
-	position: absolute;
-	top: -50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  background-color: white !important;
+  padding-inline: 1rem !important;
+  color: #a7a4a4;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .signup-btn-wrapper button {
-	border: 1px solid var(--primary) !important;
-	padding-block: 0.5rem !important;
-	padding-inline: 0.75rem !important;
+  border: 1px solid var(--primary) !important;
+  padding-block: 0.5rem !important;
+  padding-inline: 0.75rem !important;
 }
-.popup{
-	display: none;
+.popup {
+  display: none;
 }
-.popup-btn, .popup-btn:hover{
-	background-color: var(--primary);
+.popup-btn,
+.popup-btn:hover {
+  background-color: var(--primary);
 }
-.tick-img{
-	background-color: var(--primary);
-	border-radius: 50%;
+.tick-img {
+  background-color: var(--primary);
+  border-radius: 50%;
 }
