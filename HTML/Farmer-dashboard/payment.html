@@ -79,8 +79,8 @@
                         <img src="/Images/dashboard-icon.svg" alt="">
                         <p>Dashboard</p>
                     </a>
-                    <a href="./farm-produce.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4 active">
-                        <img src="/Images/farm-produce-white.svg" alt="">
+                    <a href="./farm-produce.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4 ">
+                        <img src="/Images/farm-produce-icon.svg" alt="">
                         <p>Farm Produce</p>
                     </a>
                     <a href="./ai-crop-advisor.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
@@ -91,8 +91,8 @@
                         <img src="/Images/orders-grey.svg" alt="" class="">
                         <p>Orders</p>
                     </a>
-                    <a href="./payment-setup.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
-                        <img src="/Images/payments-icon.svg" alt="">
+                    <a href="./payment-setup.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4 active">
+                        <img src="/Images/payment-white.svg" alt="">
                         <p>Payments</p>
                     </a>
                     <a href="./message.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
@@ -115,45 +115,154 @@
                 </div>
                 <div class="main-content-container">
                     <div class="main-content mt-5 pt-5 ms-md-5">
-                    <h2>Farm Produce</h2>
-                    <div class="link-wrapper d-flex gap-5 mt-5 mb-4">
-                        <a href="" class="first-a">All</a>
-                        <a href="">Active</a>
-                        <a href="">Draft</a>
-                        <a href="" class="fw-semibold ">Deactivated</a>
+                    <div class="withdrawal-link">
+                        <p class="fw-semibold withdrawal">View withdrawal history</p>
+                    </div>
+                    <div class="withdrawal-card card position-absolute">
+                        <div class="d-flex justify-content-between align-items-center px-5 py-4">
+                            <p class="withdrawal fw-semibold" >Previous withdrawal history</p>
+                            <img src="/Images/close-store-card.svg" alt="" onclick="window.location.href='./payment.html'" style="cursor: pointer;">
+                        </div>
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>12:39 <span class="ps-2">04/11/2023</span></td>
+                                    <td>Access Bank</td>
+                                    <td>Completed</td>
+                                    <td>₦19,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>12:39 <span class="ps-2">04/11/2023</span></td>
+                                    <td>Access Bank</td>
+                                    <td>Completed</td>
+                                    <td>₦20,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>12:39 <span class="ps-2">04/11/2023</span></td>
+                                    <td>Access Bank</td>
+                                    <td>Completed</td>
+                                    <td>₦10,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>12:39 <span class="ps-2">04/11/2023</span></td>
+                                    <td>Guaranty trust Bank</td>
+                                    <td>Completed</td>
+                                    <td>₦5,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>12:39 <span class="ps-2">04/11/2023</span></td>
+                                    <td>Access Bank</td>
+                                    <td>Completed</td>
+                                    <td>₦2,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>12:39 <span class="ps-2">04/11/2023</span></td>
+                                    <td>Guaranty trust Bank</td>
+                                    <td>Completed</td>
+                                    <td>₦9,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>12:39 <span class="ps-2">04/11/2023</span></td>
+                                    <td>Access Bank</td>
+                                    <td>Completed</td>
+                                    <td>₦30,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>12:39 <span class="ps-2">04/11/2023</span></td>
+                                    <td>Guaranty trust Bank</td>
+                                    <td>Completed</td>
+                                    <td>₦2,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>12:39 <span class="ps-2">04/11/2023</span></td>
+                                    <td>Access Bank</td>
+                                    <td>Completed</td>
+                                    <td>₦7,000.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center w-75">
+                        <div>
+                            <h2>Balance</h2>
+                            <p class="title-p">Click on withdraw to transfer balance into available account. <span class="green-c">Learn more.</span></p>
+                        </div>
+                        <button class="btn2 border-0" id="withdrawal-btn">Withdraw</button>
+                        </div>
+                        
+                        <div class="withdrawal-popup card position-absolute">
+                            <div class="d-flex justify-content-between align-items-center px-5 py-4">
+                            <p class="withdrawal fw-semibold" >Withdraw funds to your account</p>
+                            <img src="/Images/close-store-card.svg" alt="" onclick="window.location.href='./payment.html'" style="cursor: pointer;">
+                        </div>
+                        <form action="" class="px-5">
+                            <div class="form-div d-flex align-items-center gap-5">
+                                <div class="input-div d-flex flex-column gap-2" id="div-input">
+                                    <label for="accounts" class="label">Select account you want your funds to be paid into.</label>
+                                    <select name="" class="px-2" id="accounts">
+                                        <option value="">Account</option>
+                                        <option value="">Account</option>
+                                        <option value="">Account</option>
+                                        <option value="">Account</option>
+                                    </select>
+                                    <p class="form-p">Withdrawals can take up to 24hrs to reflect in your bank account</p>
+                                </div>
+                                <di class="input-div d-flex flex-column gap-2">
+                                    <label for="amount" class="label">Amount(NGN)</label>
+                                    <input type="text" class="px-2" placeholder="Amount"/>
+                                    <p class="form-p">Withdrawal Fee:₦30</p>
+                                </di>
+                                </div>
+                                
+                                <div class="d-flex justify-content-end mt-5"><button class="btn2 border-0">Withdraw</button></div>
+                            </form>
+                    </div>
+                    <div class="hr my-2"></div>
+                    <div class="d-flex justify-content-between w-75">
+                        <h6 class="fw-semibold balance-h6">Available balance <span class="i-icon"><img src="/Images/i-icon.svg" alt=""></span></h6>
+                        <p class="balance-h6 fw-semibold">NGN 30,000.00</p>
+                    </div>
+                    <div class="balance-popup card border-0">
+                        <div class="d-flex justify-content-between align-items-center px-5 py-4">
+                            <p class="withdrawal fw-semibold" >Available balance</p>
+                            <img src="/Images/close-store-card.svg" alt="" onclick="window.location.href='./payment.html'" style="cursor: pointer;">
+                        </div>
+                        <p class="px-5 balance-p">Your available balance is the amount of all your earnings from your farm produce since your last withdrawal. You can think of it as "funds available to withdraw." You can withdraw the money into one of the available accounts you have added.</p>
+                        <p class="px-5 balance-p">You can also select the amount you will like to withdraw when you click on the withdraw button.</p>
+                    </div>
+                    <div class="link-wrapper d-flex justify-content-between mt-5 mb-4 w-75">
+                        <h2>Account Details</h2>
+                        <button class="btn1" onclick="window.location.href='./payment-setup.html'">Add new bank</button>
                     </div>
                     <div class="card border-0 " id="scrollableCard">
                         <div class="card-content">
                             <table class="item-container">
                                 <tr class="table-head">
-                                    <th>Produce Name</th>
-                                    <th>Status</th>
-                                    <th>Inventory</th>
-                                    <th>Price <img src="/Images/dropdown-arrow.svg" alt=""></th>
-                                    <th>sales</th>
+                                    <th>Bank Name</th>
+                                    <th>Account Name</th>
+                                    <th>Currency</th>
+                                    <th></th>
                                     <!-- <th>Status</th> -->
                                 </tr>
                                 <tbody class="items">
                                     <tr class="table-hover">
-                                        <td><img src="/Images/ginger.png" alt=""></td>
-                                        <td class="last-tr"><div class="dispatched-status" style="padding-left: 18px !important;"><img src="/Images/active-dot.svg" alt=""><span class="ps-2">Active</span></div></td>
-                                        <td>22 in stock</td>
-                                        <td>NGN 3,000.00</td>
-                                        <td>0 <span><img src="/Images/more-vert.svg" alt="" class="ms-5 position-relative more-img"></span></td>
+                                        <td>Access bank</td>
+                                        <td class="">Mary Adetunji</td>
+                                        <td>NGN </td>
+                                        <td><span><img src="/Images/more-vert.svg" alt="" class="ms-5 position-relative more-img"></span></td>
                                     </tr>
                                     <tr class="table-hover">
-                                        <td><img src="/Images/eggplant.png" alt=""></td>
-                                        <td class="last-tr"><div class="pending-status" style="padding-left: 18px !important;"><img src="/Images/pending.svg" alt=""><span class="ps-2">Deactivated</span></div></td>
-                                        <td>0 in stock</td>
-                                        <td>NGN 500.00</td>
-                                        <td>12 <span><img src="/Images/more-vert.svg" alt="" class="ms-5 position-relative more-img" ></span></td>
+                                        <td>Guaranty trust bank</td>
+                                        <td class="">Mary Adetunji domicilary</td>
+                                        <td>USD</td>
+                                        <td><span><img src="/Images/more-vert.svg" alt="" class="ms-5 position-relative more-img" ></span></td>
                                     </tr>
+                                    <tr></tr>
+                                    <tr></tr>
                             </table>
-                            <div class="more-popup card d-flex flex-column w-25 position-absolute" id="more-popup" style="height: 33%; top: 40%; right: 12%; opacity: 0;">
+                            <div class="more-popup card d-flex flex-column w-25 position-absolute" id="more-popup" style="height: 17%; top: 40%; right: 12%; opacity: 0;">
                                 <button class="border-0 border-bottom bg-white d-flex align-items-start py-2 ps-2">Edit</button>
-                                <button class="border-0 border-bottom bg-white d-flex align-items-start py-2 ps-2">Product Reviews</button>
-                                <button class="border-0 border-bottom bg-white d-flex align-items-start py-2 ps-2">Deactivate Produce</button>
-                                <button class="border-0 border-bottom bg-white d-flex align-items-start py-2 ps-2">Delete Produce</button>
+                                <button class="border-0 border-bottom bg-white d-flex align-items-start py-2 ps-2">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -162,12 +271,76 @@
             </div>
 
         </main>
+        
 
+        <script>
+            const showWithdrawalCard = document.querySelector(".withdrawal-link");
+const withdrawalCard = document.querySelector(".withdrawal-card");
+
+showWithdrawalCard.addEventListener("click", function () {
+	if (
+		withdrawalCard.style.opacity === "0" ||
+		withdrawalCard.style.opacity === ""
+	) {
+		withdrawalCard.style.opacity = "1";
+		withdrawalCard.style.zIndex = "40";
+	} else {
+		withdrawalCard.style.opacity = "0";
+		withdrawalCard.style.zIndex = "-10";
+	}
+	// event.stopPropagation();
+});
+
+const showWithdrawalPopup = document.querySelector("#withdrawal-btn");
+const withdrawalPopup = document.querySelector(".withdrawal-popup");
+
+showWithdrawalPopup.addEventListener("click", function () {
+	if (
+		withdrawalPopup.style.opacity === "0" ||
+		withdrawalPopup.style.opacity === ""
+	) {
+		withdrawalPopup.style.opacity = "1";
+		withdrawalPopup.style.zIndex = "40";
+	} else {
+		withdrawalPopup.style.opacity = "0";
+		withdrawalPopup.style.zIndex = "-5";
+	}
+	// event.stopPropagation();
+});
+
+const showBalancePopup = document.querySelector(".i-icon");
+const balancePopup = document.querySelector(".balance-popup");
+
+showBalancePopup.addEventListener("click", function () {
+	if (
+		balancePopup.style.opacity === "0" ||
+		balancePopup.style.opacity === ""
+	) {
+		balancePopup.style.opacity = "1";
+		balancePopup.style.zIndex = "40";
+	} else {
+		balancePopup.style.opacity = "0";
+		balancePopup.style.zIndex = "-5";
+	}
+	// event.stopPropagation();
+});
+
+document.querySelectorAll(".more-img").forEach(function (element) {
+	element.addEventListener("click", function () {
+		document.getElementById("more-popup").style.opacity = "1";
+		
+	});
+});
+
+document.getElementById("more-popup").addEventListener("click", function () {
+	this.style.opacity = "0";
+});
+        </script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 			crossorigin="anonymous"
 		></script>
-        <script src="/dashboard.js"></script>
+        <script src="/payment.js"></script>
 	</body>
 </html>

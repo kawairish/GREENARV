@@ -107,13 +107,20 @@
                         <img src="/Images/help-icon.svg" alt="">
                         <p>Help</p>
                     </a>
-                    <a href="./message.html" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
+                    <a href="#" class="link-wrapper d-flex gap-3 align-items-center mb-4 ps-4">
                         <img src="/Images/logout-icon.svg" alt="">
                         <p class="logout">Logout</p>
                     </a>
                     </aside>
                 </div>
                 <div class="main-content-container">
+					<div class="logout-card card position-absolute d-flex flex-column justify-content-center align-items-center gap-3">
+						<h3>Come Back Soon</h3>
+						<p class="text-center mb-4">You are about to logout <br>
+                            Are you sure you want to leave this site?</p>
+						<button class="btn2 border-0 mb-2" onclick="window.location.href='/index.html'">Logout</button>
+						<button class="btn1" onclick="window.location.href='./dashboard.html'">Cancel</button>
+					</div>
                     <div class="main-content mt-5 pt-5 ms-md-4">
                         <div class="top-div d-flex justify-content-between align-items-center me-4 mb-4">
                         <div class="title">
@@ -473,7 +480,24 @@
 			// Append the SVG element.
 			container.append(svg.node());
 		</script>
+        <script>
+const showLogoutCard = document.querySelector(".logout");
+const logoutCard = document.querySelector(".logout-card");
 
+showLogoutCard.addEventListener("click", function () {
+	if (
+		logoutCard.style.opacity === "0" ||
+		logoutCard.style.opacity === ""
+	) {
+		logoutCard.style.opacity = "1";
+		logoutCard.style.zIndex = "30";
+	} else {
+		logoutCard.style.opacity = "0";
+		logoutCard.style.zIndex = "-10";
+	}
+	// event.stopPropagation();
+});
+		</script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

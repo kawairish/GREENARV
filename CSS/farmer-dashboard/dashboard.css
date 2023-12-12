@@ -93,6 +93,64 @@ aside .link-wrapper {
 .logout {
 	color: #fe2b25;
 }
+.main-content-container .logout-card {
+	width: 500px;
+	height: 550px;
+	border-radius: 28px;
+	border: none;
+	background-color: #fff;
+	box-shadow: 0px 4px 6px -2px rgba(34, 34, 34, 0.05),
+		0px 10px 15px -3px rgba(34, 34, 34, 0.1);
+	bottom: 30%;
+	left: 20%;
+	opacity: 0;
+	z-index: -10;
+}
+.main-content-container .logout-card h3 {
+	color: #14365a;
+	font-size: 28px !important;
+	font-weight: 600;
+	line-height: 40px;
+}
+.main-content-container .logout-card p {
+	color: #14365a;
+	font-size: 14px !important;
+	font-weight: 400;
+	line-height: normal;
+}
+.main-content-container .logout-card .btn2 {
+	display: flex;
+	width: 342px;
+	padding: 12px 8px !important;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	background-color: var(--primary);
+	border-radius: 8px;
+	color: #FFF;
+	font-size: 16px !important;
+	font-weight: 500;
+	font-family: "Bitter", serif;
+	cursor: pointer;
+	line-height: 24px;
+}
+.main-content-container .logout-card .btn1 {
+	display: flex;
+	width: 342px;
+	padding: 12px 8px !important;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	background-color: #FFF;
+	border-radius: 8px;
+	color: var(--primary);
+	border: 1px solid var(--primary);
+	font-size: 16px !important;
+	font-weight: 500;
+	font-family: "Bitter", serif;
+	cursor: pointer;
+	line-height: 24px;
+}
 .main-content-container {
 	width: 80%;
 	height: 190vh;
@@ -108,13 +166,13 @@ aside .link-wrapper {
 
 .main-content::-webkit-scrollbar,
 .sidebar::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 /* Hide scrollbar for IE, Edge, and Firefox */
 .main-content {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
 }
 .main-content h2 {
 	color: var(--primary);
@@ -183,47 +241,46 @@ select:focus {
 	border-bottom: 2px solid #eaebea;
 }
 .card2 .num-btn {
-    background-color: var(--primary);
-    border-radius: 8px;
+	background-color: var(--primary);
+	border-radius: 8px;
 }
 .card2 .card-title {
-    border-bottom:  2px solid #DCE1DD;
+	border-bottom: 2px solid #dce1dd;
 }
 .active-img {
-    bottom: 8%;
-    right: -10%;
+	bottom: 8%;
+	right: -10%;
 }
-.profile-text h4{
-    color: var(--text);
-    font-size: 14px !important;
-    font-weight: 400;
+.profile-text h4 {
+	color: var(--text);
+	font-size: 14px !important;
+	font-weight: 400;
 }
 .profile-text p {
-    color: #8B919C;
-    font-size: 12px !important;
+	color: #8b919c;
+	font-size: 12px !important;
 }
 .card2 .time {
-    color: var(--text);
-    font-size: 12px !important;
+	color: var(--text);
+	font-size: 12px !important;
 }
 .profile-text a {
-    color: var(--primary);
-    text-decoration: underline;
-    font-size: 12px !important;
+	color: var(--primary);
+	text-decoration: underline;
+	font-size: 12px !important;
 }
 .card2 button {
-    border:  1px solid var(--primary);
-    border-radius: 8px;
-    color: var(--primary);
-    font-size: 12px !important;
-    background-color: var(--dashboard);
+	border: 1px solid var(--primary);
+	border-radius: 8px;
+	color: var(--primary);
+	font-size: 12px !important;
+	background-color: var(--dashboard);
 }
-
 
 #container {
 	width: 97%;
 	height: 469px;
-	background-color: #FFFCEF;
+	background-color: #fffcef;
 }
 
 .graphContainer {
@@ -233,10 +290,10 @@ select:focus {
 	height: auto;
 	font: 10px sans-serif;
 }
-.overview{
-    color: #4E4E4E;
-    font-weight: 600;
-    font-size: 18px;
+.overview {
+	color: #4e4e4e;
+	font-weight: 600;
+	font-size: 18px;
 }
 
 #container > svg > g:nth-child(2) > g:not(:nth-child(2)) > line {
